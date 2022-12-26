@@ -10,6 +10,8 @@
     body {
       background-color: black;
       color: white;
+      margin: 0;
+      padding: 0;
     }
     #logo {
       display: block;
@@ -18,8 +20,8 @@
       font-weight: bold;
     }
     @font-face {
-      font-family: 'VT323', monospace;
-      src: url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+      font-family: 'Matrix';
+      src: url('path/to/Matrix.ttf');
     }
     #logo {
       font-family: 'Matrix';
@@ -27,6 +29,10 @@
     .gcse-search {
       display: block;
       margin: 0 auto;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
     }
     #footer {
       background-color: green;
@@ -34,6 +40,9 @@
       color: white;
       font-size: 14px;
       text-align: center;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
       padding: 20px;
     }
     #footer a {
